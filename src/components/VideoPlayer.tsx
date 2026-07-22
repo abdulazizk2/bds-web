@@ -69,11 +69,9 @@ export default function VideoPlayer({
 
   const handleSeekMouseDown = () => setSeeking(true);
 
-  const handleSeekMouseUp = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSeeking(false);
-    playerRef.current?.seekTo(parseFloat(e.target.value));
-  };
-
+ const handleSeekMouseUp = () => {
+  setSeeking(false);
+};
   const toggleFullscreen = () => {
     if (!wrapperRef.current) return;
     if (!document.fullscreenElement) {
