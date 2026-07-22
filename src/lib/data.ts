@@ -3,7 +3,7 @@ import { Subject } from './types';
 // Sample lecture videos (placeholder public domain clips).
 // Replace these URLs with real recorded lectures when available.
 const SAMPLE_VIDEOS = [
-  'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+  '/videos/operative-dentistry/Intro.mp4',
   'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
   'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
   'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
@@ -21,7 +21,7 @@ export const subjects: Subject[] = [
       {
         id: 'intro-operative-dentistry',
         title: 'Introduction to Operative Dentistry',
-        duration: '12:30',
+        duration: '0:22',
         description: 'Overview of scope, goals, and principles of operative dentistry.',
         videoUrl: SAMPLE_VIDEOS[0],
         quiz: [
